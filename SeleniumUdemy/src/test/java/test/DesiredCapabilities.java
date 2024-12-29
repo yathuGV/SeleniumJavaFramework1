@@ -31,4 +31,14 @@ public class DesiredCapabilities
 		
 	}
 
+	public static DesiredCapabilities chrome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setCapability(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

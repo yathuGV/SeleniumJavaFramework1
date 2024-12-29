@@ -1,5 +1,7 @@
 package Selenium;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +18,7 @@ public class Test1_GoogleSearch {
 		driver.get("https://www.google.lk/");
 		driver.findElement(By.name("q")).sendKeys("Test");
 //		driver.findElement(By.name("btnK")).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.findElement(By.name("btnK")).sendKeys(Keys.RETURN);
 		
 		driver.close();
